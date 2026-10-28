@@ -1,3 +1,4 @@
+// Question: How can a program calculate the sum of an integer’s digits?
 package Loop;
 
 import java.util.Scanner;
@@ -22,11 +23,11 @@ public class SumOfDigit {
 //    sum =+1mod 10=1reminder 0,
 //    so sum = 5 + 1 = 6;
 
-static void main(String[] args) {
+public static void main(String[] args) {
     System.out.print("Enter your value:");
     Scanner s = new Scanner(System.in);
-    int n = s.nextInt();
-    int sum =0;
+    long n = Math.abs((long) s.nextInt());
+    long sum = 0;
     while(n>0){
         sum += n%10 ;
         n/=10;
